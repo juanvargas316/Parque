@@ -1,0 +1,5 @@
+namespace parque.Models
+{
+    public enum EstadoBoleta { Activa, Anulada, Usada }
+    public enum TipoAcceso { Normal, SinFila }
+}

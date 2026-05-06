@@ -1,0 +1,28 @@
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\bin\Debug\net9.0\Parque.exe
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\bin\Debug\net9.0\Parque.deps.json
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\bin\Debug\net9.0\Parque.runtimeconfig.json
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\bin\Debug\net9.0\Parque.dll
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\bin\Debug\net9.0\Parque.pdb
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\Parque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\Parque.AssemblyInfoInputs.cache
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\Parque.AssemblyInfo.cs
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\Parque.csproj.CoreCompileInputs.cache
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\Parque.dll
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\refint\Parque.dll
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\Parque.pdb
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\Parque.genruntimeconfig.cache
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\ref\Parque.dll
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\bin\Debug\net9.0\Parque.exe
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\bin\Debug\net9.0\Parque.deps.json
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\bin\Debug\net9.0\Parque.runtimeconfig.json
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\bin\Debug\net9.0\Parque.dll
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\bin\Debug\net9.0\Parque.pdb
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\obj\Debug\net9.0\Parque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\obj\Debug\net9.0\Parque.AssemblyInfoInputs.cache
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\obj\Debug\net9.0\Parque.AssemblyInfo.cs
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\obj\Debug\net9.0\Parque.csproj.CoreCompileInputs.cache
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\obj\Debug\net9.0\Parque.dll
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\obj\Debug\net9.0\refint\Parque.dll
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\obj\Debug\net9.0\Parque.pdb
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\obj\Debug\net9.0\Parque.genruntimeconfig.cache
+C:\Users\JuanMa\Desktop\parque\Parque\Parque\obj\Debug\net9.0\ref\Parque.dll
