@@ -1,0 +1,15 @@
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.AssemblyInfoInputs.cache
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.AssemblyInfo.cs
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.csproj.CoreCompileInputs.cache
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.sourcelink.json
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\bin\Debug\net9.0-windows\Parque.exe
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\bin\Debug\net9.0-windows\Parque.deps.json
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\bin\Debug\net9.0-windows\Parque.runtimeconfig.json
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\bin\Debug\net9.0-windows\Parque.dll
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\bin\Debug\net9.0-windows\Parque.pdb
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.dll
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\refint\Parque.dll
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.pdb
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.genruntimeconfig.cache
+C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\ref\Parque.dll
