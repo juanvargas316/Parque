@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JuanMa\\Desktop\\parque\\Parque\\Parque\\Parque.csproj": {}
+    "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque\\Parque.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JuanMa\\Desktop\\parque\\Parque\\Parque\\Parque.csproj": {
+    "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque\\Parque.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanMa\\Desktop\\parque\\Parque\\Parque\\Parque.csproj",
+        "projectUniqueName": "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque\\Parque.csproj",
         "projectName": "Parque",
-        "projectPath": "C:\\Users\\JuanMa\\Desktop\\parque\\Parque\\Parque\\Parque.csproj",
+        "projectPath": "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque\\Parque.csproj",
         "packagesPath": "C:\\Users\\JuanMa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanMa\\Desktop\\parque\\Parque\\Parque\\obj\\",
+        "outputPath": "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -61,24 +61,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.15, 9.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[9.0.15, 9.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.15, 9.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[9.0.15, 9.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

@@ -13,3 +13,4 @@ C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\re
 C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.pdb
 C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\Parque.genruntimeconfig.cache
 C:\Users\JuanMa\Desktop\parque\ParqueWinForms\Parque\obj\Debug\net9.0-windows\ref\Parque.dll
+C:\Users\JuanMa\Desktop\Parque\parquewinforms\parque\bin\Debug\net9.0-windows\barnyparque.ico

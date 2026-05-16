@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T9D7pdBGbyY=",
+  "dgSpecHash": "Ma8JwifmBjc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\JuanMa\\Desktop\\parque\\Parque\\Parque\\Parque.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\JuanMa\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.15\\microsoft.netcore.app.ref.9.0.15.nupkg.sha512",
-    "C:\\Users\\JuanMa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.15\\microsoft.windowsdesktop.app.ref.9.0.15.nupkg.sha512",
-    "C:\\Users\\JuanMa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.15\\microsoft.aspnetcore.app.ref.9.0.15.nupkg.sha512",
-    "C:\\Users\\JuanMa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.15\\microsoft.netcore.app.host.win-x64.9.0.15.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque\\Parque.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
