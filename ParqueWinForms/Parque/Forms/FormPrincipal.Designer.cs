@@ -122,7 +122,7 @@ namespace Parque.Forms
                 Location = new Point(163, 28),
                 Size = new Size(145, 35),
                 BackColor = Color.Gold,
-                ForeColor = Color.Black,
+                ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat
             };
             btnVenderVIP.Click += btnVenderVIP_Click;
