@@ -36,7 +36,8 @@ namespace Parque.Forms
             }
             else
             {
-                lblEstadoBoleta.Text = _ultimaBoleta.ToString();
+                string tipo = _ultimaBoleta is BoletaVIP ? "VIP" : "General";
+                lblEstadoBoleta.Text = $"Boleta {tipo} | Estado: {_ultimaBoleta.Estado} | Precio: ${_ultimaBoleta.Precio}";
                 lblEstadoBoleta.ForeColor = _ultimaBoleta.PuedeIngresar() ? Color.Green : Color.Red;
                 btnAnular.Enabled = !_ultimaBoleta.EstaAnulada() && !_ultimaBoleta.EstaUsada();
                 btnRegistrarIngreso.Enabled = _ultimaBoleta.PuedeIngresar();
@@ -76,7 +77,9 @@ namespace Parque.Forms
 
             _ultimaBoleta = _servicio.VenderBoleta(boleta);
             ActualizarEstadoBoleta();
-            MessageBox.Show($"Boleta {(esVIP ? "VIP" : "General")} vendida.\n{_ultimaBoleta}",
+
+            string tipo = esVIP ? "VIP" : "General";
+            MessageBox.Show($"Boleta {tipo} vendida.\nPrecio: ${boleta.Precio}\nVence: {boleta.FechaVencimiento:HH:mm}",
                 "Boleta vendida", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -109,10 +112,12 @@ namespace Parque.Forms
                 var atraccion = (Atraccion)lstAtracciones.SelectedItem;
                 var ingreso = _servicio.RegistrarIngreso(_ultimaBoleta, atraccion);
 
-                lstIngresos.Items.Insert(0, ingreso.ToString());
+                string tipo = ingreso.TipoAcceso == TipoAcceso.SinFila ? "VIP" : "General";
+                lstIngresos.Items.Insert(0, $"{atraccion.Nombre} | Boleta {tipo} | {ingreso.Hora:HH:mm}");
+
                 ActualizarEstadoBoleta();
 
-                MessageBox.Show($"Ingreso registrado en '{atraccion.Nombre}'.\nAcceso: {ingreso.TipoAcceso}",
+                MessageBox.Show($"Ingreso registrado en '{atraccion.Nombre}'.\nTipo de boleta: {tipo}\nHora: {ingreso.Hora:HH:mm}",
                     "Ingreso OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
