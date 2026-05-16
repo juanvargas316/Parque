@@ -53,7 +53,7 @@ namespace Parque.Forms
             lblTitulo = new Label
             {
                 Text = "Parque de Atracciones",
-                Font = new Font("Segoe UI", 18, FontStyle.Regular),
+                Font = new Font("Comic Sans", 18, FontStyle.Regular),
                 ForeColor = Color.Black,
                 Location = new Point(0, 12),
                 Size = new Size(700, 40),

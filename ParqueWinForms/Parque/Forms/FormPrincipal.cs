@@ -7,6 +7,7 @@ namespace Parque.Forms
     {
         private readonly ParqueService _servicio;
         private Boleta? _ultimaBoleta;
+        private List<Boleta> _boletas = new();
 
         public FormPrincipal(ParqueService servicio)
         {
@@ -14,6 +15,12 @@ namespace Parque.Forms
             _servicio = servicio;
             ActualizarUI();
         }
+
+        private Boleta? ObtenerProximaBoleta() =>
+            _boletas
+                .Where(b => b.PuedeIngresar())
+                .OrderByDescending(b => b is BoletaVIP)
+                .FirstOrDefault();
 
         private void ActualizarUI()
         {
@@ -27,7 +34,9 @@ namespace Parque.Forms
 
         private void ActualizarEstadoBoleta()
         {
-            if (_ultimaBoleta == null)
+            var boletaDisponible = ObtenerProximaBoleta();
+
+            if (boletaDisponible == null)
             {
                 lblEstadoBoleta.Text = "Sin boleta activa";
                 lblEstadoBoleta.ForeColor = Color.Gray;
@@ -36,11 +45,12 @@ namespace Parque.Forms
             }
             else
             {
-                string tipo = _ultimaBoleta is BoletaVIP ? "VIP" : "General";
-                lblEstadoBoleta.Text = $"Boleta {tipo} | Estado: {_ultimaBoleta.Estado} | Precio: ${_ultimaBoleta.Precio}";
-                lblEstadoBoleta.ForeColor = _ultimaBoleta.PuedeIngresar() ? Color.Green : Color.Red;
-                btnAnular.Enabled = !_ultimaBoleta.EstaAnulada() && !_ultimaBoleta.EstaUsada();
-                btnRegistrarIngreso.Enabled = _ultimaBoleta.PuedeIngresar();
+                string tipo = boletaDisponible is BoletaVIP ? "VIP" : "General";
+                int disponibles = _boletas.Count(b => b.PuedeIngresar());
+                lblEstadoBoleta.Text = $"Boletas disponibles: {disponibles} | Proxima: {tipo} | ${boletaDisponible.Precio}";
+                lblEstadoBoleta.ForeColor = Color.Green;
+                btnAnular.Enabled = true;
+                btnRegistrarIngreso.Enabled = true;
             }
         }
 
@@ -58,7 +68,7 @@ namespace Parque.Forms
                 _servicio.AgregarAtraccion(new Atraccion(nombre));
                 txtNombreAtraccion.Clear();
                 ActualizarUI();
-                MessageBox.Show("Atracción agregada.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Atraccion agregada.", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -76,6 +86,7 @@ namespace Parque.Forms
                 : new BoletaGeneral(DateTime.Now.AddMinutes(10), 500);
 
             _ultimaBoleta = _servicio.VenderBoleta(boleta);
+            _boletas.Add(boleta);
             ActualizarEstadoBoleta();
 
             string tipo = esVIP ? "VIP" : "General";
@@ -85,10 +96,11 @@ namespace Parque.Forms
 
         private void btnAnular_Click(object sender, EventArgs e)
         {
-            if (_ultimaBoleta == null) return;
+            var boletaDisponible = ObtenerProximaBoleta();
+            if (boletaDisponible == null) return;
             try
             {
-                _ultimaBoleta.Anular();
+                boletaDisponible.Anular();
                 ActualizarEstadoBoleta();
                 MessageBox.Show("Boleta anulada.", "Anulada", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -100,9 +112,11 @@ namespace Parque.Forms
 
         private void btnRegistrarIngreso_Click(object sender, EventArgs e)
         {
-            if (_ultimaBoleta == null || lstAtracciones.SelectedItem == null)
+            var boletaDisponible = ObtenerProximaBoleta();
+
+            if (boletaDisponible == null || lstAtracciones.SelectedItem == null)
             {
-                MessageBox.Show("Selecciona una atracción de la lista.", "Aviso",
+                MessageBox.Show("No hay boletas disponibles o no seleccionaste una atraccion.", "Aviso",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -110,14 +124,15 @@ namespace Parque.Forms
             try
             {
                 var atraccion = (Atraccion)lstAtracciones.SelectedItem;
-                var ingreso = _servicio.RegistrarIngreso(_ultimaBoleta, atraccion);
+                var ingreso = _servicio.RegistrarIngreso(boletaDisponible, atraccion);
 
                 string tipo = ingreso.TipoAcceso == TipoAcceso.SinFila ? "VIP" : "General";
                 lstIngresos.Items.Insert(0, $"{atraccion.Nombre} | Boleta {tipo} | {ingreso.Hora:HH:mm}");
 
+                _ultimaBoleta = ObtenerProximaBoleta();
                 ActualizarEstadoBoleta();
 
-                MessageBox.Show($"Ingreso registrado en '{atraccion.Nombre}'.\nTipo de boleta: {tipo}\nHora: {ingreso.Hora:HH:mm}",
+                MessageBox.Show($"Ingreso registrado en '{atraccion.Nombre}'.\nTipo: {tipo}\nHora: {ingreso.Hora:HH:mm}",
                     "Ingreso OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
