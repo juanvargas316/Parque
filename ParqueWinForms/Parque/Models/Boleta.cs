@@ -4,7 +4,7 @@ namespace Parque.Models
 {
     public abstract class Boleta
     {
-        public int Id { get; private set; }
+        public int Id { get; set; }
 
         private float _precio;
         public float Precio
@@ -34,7 +34,6 @@ namespace Parque.Models
 
         public Boleta(DateTime fechaVencimiento, float precio)
         {
-            Id = Guid.NewGuid().GetHashCode();
             Precio = precio;
             FechaVencimiento = fechaVencimiento;
             Estado = EstadoBoleta.Activa;

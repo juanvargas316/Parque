@@ -7,7 +7,6 @@ namespace Parque.Forms
     {
         private readonly ParqueService _servicio;
         private Boleta? _ultimaBoleta;
-        private List<Boleta> _boletas = new();
 
         public FormPrincipal(ParqueService servicio)
         {
@@ -17,7 +16,8 @@ namespace Parque.Forms
         }
 
         private Boleta? ObtenerProximaBoleta() =>
-            _boletas
+            _servicio
+                .ObtenerBoletas()
                 .Where(b => b.PuedeIngresar())
                 .OrderByDescending(b => b is BoletaVIP)
                 .FirstOrDefault();
@@ -46,7 +46,7 @@ namespace Parque.Forms
             else
             {
                 string tipo = boletaDisponible is BoletaVIP ? "VIP" : "General";
-                int disponibles = _boletas.Count(b => b.PuedeIngresar());
+                int disponibles = _servicio.ObtenerBoletas().Count(b => b.PuedeIngresar());
                 lblEstadoBoleta.Text = $"Boletas disponibles: {disponibles} | Proxima: {tipo} | ${boletaDisponible.Precio}";
                 lblEstadoBoleta.ForeColor = Color.Green;
                 btnAnular.Enabled = true;
@@ -86,7 +86,6 @@ namespace Parque.Forms
                 : new BoletaGeneral(DateTime.Now.AddMinutes(10), 500);
 
             _ultimaBoleta = _servicio.VenderBoleta(boleta);
-            _boletas.Add(boleta);
             ActualizarEstadoBoleta();
 
             string tipo = esVIP ? "VIP" : "General";

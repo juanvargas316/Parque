@@ -2,6 +2,7 @@ namespace Parque.Models
 {
     public class Atraccion
     {
+        public int Id { get; set; }
         private string _nombre;
         public string Nombre
         {
@@ -14,6 +15,9 @@ namespace Parque.Models
             }
         }
 
+        public Atraccion() { }
+
         public Atraccion(string nombre) => Nombre = nombre;
+        public override string ToString() => Nombre;
     }
 }

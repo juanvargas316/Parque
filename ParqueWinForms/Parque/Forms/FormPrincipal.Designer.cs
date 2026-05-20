@@ -90,7 +90,7 @@ namespace Parque.Forms
             lstAtracciones = new ListBox
             {
                 Location = new Point(10, 58),
-                Size = new Size(298, 130)
+                Size = new Size(600, 200)
             };
 
             grpAtracciones.Controls.AddRange(new Control[]
