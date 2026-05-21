@@ -41,3 +41,4 @@ C:\Users\JuanMa\Desktop\Parque\Parque\obj\Debug\net9.0\refint\Parque.dll
 C:\Users\JuanMa\Desktop\Parque\Parque\obj\Debug\net9.0\Parque.pdb
 C:\Users\JuanMa\Desktop\Parque\Parque\obj\Debug\net9.0\Parque.genruntimeconfig.cache
 C:\Users\JuanMa\Desktop\Parque\Parque\obj\Debug\net9.0\ref\Parque.dll
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque\obj\Debug\net9.0\Parque.sourcelink.json

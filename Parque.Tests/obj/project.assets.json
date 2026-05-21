@@ -1668,23 +1668,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JuanMa\\.nuget\\packages\\": {},
+    "C:\\Users\\ROG\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque.Tests\\Parque.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\ROG\\Proyectos Personales\\PascualBravo\\4Semestre\\HERRAMIENTASPROGRAMACION2\\Parque\\Parque.Tests\\Parque.Tests.csproj",
       "projectName": "Parque.Tests",
-      "projectPath": "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque.Tests\\Parque.Tests.csproj",
-      "packagesPath": "C:\\Users\\JuanMa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque.Tests\\obj\\",
+      "projectPath": "C:\\Users\\ROG\\Proyectos Personales\\PascualBravo\\4Semestre\\HERRAMIENTASPROGRAMACION2\\Parque\\Parque.Tests\\Parque.Tests.csproj",
+      "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ROG\\Proyectos Personales\\PascualBravo\\4Semestre\\HERRAMIENTASPROGRAMACION2\\Parque\\Parque.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\JuanMa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1693,15 +1693,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque\\Parque.csproj": {
-              "projectPath": "C:\\Users\\JuanMa\\Desktop\\Parque\\Parque\\Parque.csproj"
+            "C:\\Users\\ROG\\Proyectos Personales\\PascualBravo\\4Semestre\\HERRAMIENTASPROGRAMACION2\\Parque\\Parque\\Parque.csproj": {
+              "projectPath": "C:\\Users\\ROG\\Proyectos Personales\\PascualBravo\\4Semestre\\HERRAMIENTASPROGRAMACION2\\Parque\\Parque\\Parque.csproj"
             }
           }
         }
@@ -1716,7 +1715,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -1747,7 +1746,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

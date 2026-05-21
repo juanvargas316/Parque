@@ -527,3 +527,4 @@ C:\Users\JuanMa\Desktop\Parque\Parque.Tests\obj\Debug\net9.0\refint\Parque.Tests
 C:\Users\JuanMa\Desktop\Parque\Parque.Tests\obj\Debug\net9.0\Parque.Tests.pdb
 C:\Users\JuanMa\Desktop\Parque\Parque.Tests\obj\Debug\net9.0\Parque.Tests.genruntimeconfig.cache
 C:\Users\JuanMa\Desktop\Parque\Parque.Tests\obj\Debug\net9.0\ref\Parque.Tests.dll
+C:\Users\ROG\Proyectos Personales\PascualBravo\4Semestre\HERRAMIENTASPROGRAMACION2\Parque\Parque.Tests\obj\Debug\net9.0\Parque.Tests.sourcelink.json
